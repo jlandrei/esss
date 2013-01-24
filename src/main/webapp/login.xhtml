@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <body>
+
+        <ui:composition template="./WEB-INF/template/template.xhtml">
+
+            <ui:define name="top">
+                Veuillez vous identifier
+            </ui:define>
+
+            <ui:define name="content">
+                <form action="loginProcess.do" method="post">
+                    <h:outputText value="Identifiant :" />
+                    <h:inputText id="j_username" value="" required="true" requiredMessage="login obligatoire"/>
+                    <br/>
+                    <h:outputText value="Mot de pass :" />
+                    <h:inputSecret id="j_password" value="" required="true" requiredMessage="Mdp obligatoire"/>
+                    <button type="submit"  >Soumettre</button>
+                </form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
