@@ -23,6 +23,7 @@
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
+
     
     	<!-- Spring Security -->
     <filter>
