@@ -5,15 +5,17 @@
       xmlns:ui="http://java.sun.com/jsf/facelets">
 
     <h:body>
-        <ui:composition template="./WEB-INF/template/template.xhtml">
+        <ui:composition template="/WEB-INF/template/template.xhtml">
             <ui:define name="top">
                 Page d'accueil
             </ui:define>
 
             <ui:define name="content">
                 Salut les nazes<br/>
-                <a href="home.do">accès sécurisé</a>
+                <h:link outcome="sec/home.do" value="accès sécurisé" /><br/>
+                <h:link outcome="sec/newjsf.do" value="autre page sécurisée"/>
                 
+                                
             </ui:define>
         </ui:composition>
     </h:body>
